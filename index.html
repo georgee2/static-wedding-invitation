@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah &amp; James — Wedding Invitation</title>
+  <meta name="description" content="You are cordially invited to celebrate the wedding of Sarah &amp; James on December 15, 2026 in New York City." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>" />
+</head>
+<body>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="welcome">
+
+    <div class="monogram" aria-hidden="true">
+      <svg class="crest-wreath" viewBox="0 0 140 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Crown -->
+        <path d="M63 18 L66.5 8 L70 15 L73.5 8 L77 18" stroke="#b8933e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Main circle -->
+        <circle cx="70" cy="80" r="38" stroke="#b8933e" stroke-width="0.75"/>
+        <!-- Inner accent circle -->
+        <circle cx="70" cy="80" r="34" stroke="#b8933e" stroke-width="0.4" opacity="0.35"/>
+        <!-- Left laurel stem -->
+        <path d="M42 125 C34 112 28 96 30 80 C32 64 40 50 54 38" stroke="#b8933e" stroke-width="0.6" fill="none"/>
+        <!-- Left leaves -->
+        <path d="M38 115 C32 110 30 104 34 102" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M33 103 C27 98 26 92 30 90" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M30 91 C25 86 24 80 28 78" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M31 79 C27 74 27 68 31 66" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M35 67 C32 62 32 56 36 54" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M42 55 C39 50 40 44 44 43" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <!-- Right laurel stem -->
+        <path d="M98 125 C106 112 112 96 110 80 C108 64 100 50 86 38" stroke="#b8933e" stroke-width="0.6" fill="none"/>
+        <!-- Right leaves -->
+        <path d="M102 115 C108 110 110 104 106 102" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M107 103 C113 98 114 92 110 90" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M110 91 C115 86 116 80 112 78" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M109 79 C113 74 113 68 109 66" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M105 67 C108 62 108 56 104 54" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M98 55 C101 50 100 44 96 43" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <!-- Bottom ribbon -->
+        <path d="M50 128 C52 132 55 135 58 136" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+        <path d="M90 128 C88 132 85 135 82 136" stroke="#b8933e" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="monogram-ring">
+        <span>M</span><em>&amp;</em><span>G</span>
+      </div>
+    </div>
+
+    <h1 class="hero-names">Merna <em>&amp;</em> George</h1>
+
+    <div class="hero-rule" aria-hidden="true"></div>
+
+    <p class="hero-invite">Together with their families, request the pleasure of your company</p>
+    <p class="hero-date">November 10, 2026 &nbsp;·&nbsp; 5:00 PM</p>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── Divider ─── -->
+  <div class="section-divider" aria-hidden="true"><div class="divider-diamond"></div></div>
+
+  <!-- ═══════════════ COUNTDOWN ═══════════════ -->
+  <section class="countdown-section" id="countdown">
+    <div class="reveal">
+      <h2 class="section-heading">Counting Down to Forever</h2>
+      <p class="section-subtext">Every second brings us closer to the most beautiful day of our lives.</p>
+    </div>
+
+    <div class="countdown-grid reveal reveal-delay-1" id="countdown-timer" aria-live="polite" aria-label="Countdown to wedding day">
+      <div class="countdown-circle">
+        <span class="countdown-number" id="countdown-days">000</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <span class="countdown-separator" aria-hidden="true">:</span>
+      <div class="countdown-circle">
+        <span class="countdown-number" id="countdown-hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <span class="countdown-separator" aria-hidden="true">:</span>
+      <div class="countdown-circle">
+        <span class="countdown-number" id="countdown-minutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <span class="countdown-separator" aria-hidden="true">:</span>
+      <div class="countdown-circle">
+        <span class="countdown-number" id="countdown-seconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Divider ─── -->
+  <div class="section-divider" aria-hidden="true"><div class="divider-diamond"></div></div>
+
+  <!-- ═══════════════ OUR STORY ═══════════════ -->
+  <section class="story-section" id="story">
+    <div class="reveal">
+      <h2 class="section-heading">Our Story</h2>
+    </div>
+
+    <div class="story-content">
+      <div class="story-photo-frame reveal reveal-delay-1">
+        <img
+          src="images/couple-photo.jpg"
+          alt="Sarah and James together at sunset"
+          width="800"
+          height="380"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="story-text reveal reveal-delay-2">
+        <p>
+          It all started with a chance encounter at a cozy coffee shop on a rainy autumn afternoon.
+          Sarah was reading her favorite novel, and James accidentally bumped into her table, spilling
+          his coffee. What began with a flurry of apologies and napkins quickly turned into hours of
+          conversation, laughter, and an undeniable spark.
+        </p>
+        <p>
+          From that moment, they were inseparable — exploring city streets, sharing sunset picnics,
+          and building a life filled with love, adventure, and a million little moments that made
+          everything feel like magic. Now, they are ready to write the most beautiful chapter of their
+          story together, and they want you to be there to celebrate it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Divider ─── -->
+  <div class="section-divider" aria-hidden="true"><div class="divider-diamond"></div></div>
+
+  <!-- ═══════════════ THE DAY (Ceremony + Reception) ═══════════════ -->
+  <section class="venue-section" id="the-day">
+    <div class="reveal">
+      <h2 class="section-heading">The Day</h2>
+      <p class="section-subtext">We invite you to share in these moments as we begin our journey together.</p>
+    </div>
+
+    <div class="venue-cards">
+      <div class="venue-card reveal reveal-delay-1">
+        <p class="venue-card-type">The Ceremony</p>
+        <h3 class="venue-card-name">St. George and Anba Ebram</h3>
+        <div class="venue-card-rule" aria-hidden="true"></div>
+        <p class="venue-card-datetime">Tuesday, November 10, 2026 &nbsp;·&nbsp; 5:00 PM</p>
+        <p class="venue-card-address">
+          Heliopolis Square<br />
+          <a href="https://maps.app.goo.gl/H1WdsBZTX1UfzVN18" target="_blank" rel="noopener noreferrer">View on Map &rarr;</a>
+        </p>
+      </div>
+
+      <div class="venue-card reveal reveal-delay-2">
+        <p class="venue-card-type">The Celebration</p>
+        <h3 class="venue-card-name">Crystal Palace Hall</h3>
+        <div class="venue-card-rule" aria-hidden="true"></div>
+        <p class="venue-card-datetime">Tuesday, November 10, 2026 &nbsp;·&nbsp; 7:00 PM</p>
+        <p class="venue-card-address">
+          Police Sporting Federation, Cairo<br />
+          <a href="https://maps.app.goo.gl/x4aTF9q6QFmPABNBA" target="_blank" rel="noopener noreferrer">View on Map &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Divider ─── -->
+  <div class="section-divider" aria-hidden="true"><div class="divider-diamond"></div></div>
+
+  <!-- ═══════════════ GALLERY ═══════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="reveal">
+      <h2 class="section-heading">Our Gallery</h2>
+      <p class="section-subtext">A glimpse of the memories we've built along the way.</p>
+    </div>
+
+    <div class="gallery-grid reveal reveal-delay-1">
+      <div class="gallery-item">
+        <img src="images/couple-photo.jpg" alt="Sarah and James at sunset" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/church-venue.jpg" alt="The ceremony venue" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/reception-venue.jpg" alt="The reception venue" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Divider ─── -->
+  <div class="section-divider" aria-hidden="true"><div class="divider-diamond"></div></div>
+
+  <!-- ═══════════════ CLOSING MESSAGE ═══════════════ -->
+  <section class="closing-section" id="closing">
+    <div class="reveal">
+      <h2 class="section-heading">With Love &amp; Joy</h2>
+
+      <div class="closing-flourish" aria-hidden="true">
+        <svg class="flourish-scroll" viewBox="0 0 60 20" fill="none">
+          <path d="M56 10 C46 10 38 3 28 3 C18 3 12 8 8 12 C5 15 4 17 5 19" stroke="#b8933e" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="divider-diamond" style="width:6px;height:6px;margin:0 0.5rem"></div>
+        <svg class="flourish-scroll" viewBox="0 0 60 20" fill="none" style="transform:scaleX(-1)">
+          <path d="M56 10 C46 10 38 3 28 3 C18 3 12 8 8 12 C5 15 4 17 5 19" stroke="#b8933e" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="closing-quote">
+        Two hearts, one love, one lifetime. We are so grateful to have you in our lives,
+        and nothing would make this day more special than having you by our side.
+        Come celebrate with us — bring your love, your laughter, and your dancing shoes!
+      </div>
+
+      <p class="closing-names">Merna &amp; George</p>
+      <p class="closing-date">November 10, 2026</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    Made with love &nbsp;·&nbsp; Merna &amp; George 2026
+  </footer>
+
+  <!-- ═══════════════ LIGHTBOX ═══════════════ -->
+  <div class="lightbox-overlay" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <img src="" alt="Full-size preview" id="lightbox-img" />
+  </div>
+
+  <!-- ═══════════════ SCRIPTS ═══════════════ -->
+  <script src="script.js"></script>
+</body>
+</html>
