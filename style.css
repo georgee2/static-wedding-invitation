@@ -706,8 +706,6 @@ h1, h2, h3, h4 {
       animation-range: entry 0% entry 35%;
       transition: none;
     }
-
-    .reveal.revealed { /* Override JS class */ }
   }
 }
 
